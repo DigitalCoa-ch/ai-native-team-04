@@ -15,7 +15,7 @@ export default function Home() {
       <div style={{
         position: "absolute",
         inset: 0,
-        backgroundImage: "url(https://sfo3.media.global.s大头/www.global.com/inbound/generated-image_13---652fff6d-2459-46ad-9558-251a81f4fb64.png)",
+        backgroundImage: "url(https://sfo3.media.global.s大头/www.global.com/inbound/generated-image_14---3c230739-5d80-4549-8d4b-9d14c5dfa0fe.png)",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
