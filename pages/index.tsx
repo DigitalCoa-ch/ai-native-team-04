@@ -45,7 +45,7 @@ export default function Home() {
         }}>
           Construction Site<br />
           <span style={{
-            color: "#ffcc00",
+            color: "#ffffff",
             textShadow: "0 0 15px rgba(255, 204, 0, 1), 0 0 40px rgba(255, 160, 0, 0.8), 0 0 80px rgba(255, 120, 0, 0.6), 6px 6px 0 #1a1a2e, -3px -3px 0 #1a1a2e",
           }}>
             Progress Reconstructor
@@ -54,9 +54,9 @@ export default function Home() {
 
         <p style={{
           fontSize: "clamp(1rem, 2vw, 1.4rem)",
-          color: "#e0e0e0",
+          color: "#ffffff",
           marginBottom: "2rem",
-          textShadow: "2px 2px 8px rgba(0,0,0,0.9)",
+          textShadow: 2px 2px 8px rgba(0,0,0,0.9),
           letterSpacing: "0.1em",
           fontWeight: 300,
         }}>
@@ -111,7 +111,7 @@ export default function Home() {
         pointerEvents: "none",
       }} />
 
-      <style>{`@keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } } a:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 8px 30px rgba(255,136,0,0.7), 0 0 60px rgba(255,85,0,0.5); }`}</style>
+      <style>{@keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } } a:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 8px 30px rgba(255,136,0,0.7), 0 0 60px rgba(255,85,0,0.5); }`}</style>
     </div>
   );
 }
