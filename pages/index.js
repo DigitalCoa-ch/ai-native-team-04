@@ -1,6 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
 
+const navLinks = [
+  { href: '/how-it-works', label: 'How It Works', desc: 'See how data flows from input to alert' },
+  { href: '/ai-logic', label: 'AI Logic', desc: 'The six-step detection process' },
+  { href: '/alert-system', label: 'Alert System', desc: 'Severity levels from low to critical' },
+  { href: '/human-in-the-loop', label: 'Human-in-the-Loop', desc: 'High control model explained' },
+  { href: '/users', label: 'User Roles', desc: 'Who uses the system and how' },
+];
+
 export default function Home() {
   return (
     <div style={{
@@ -32,7 +40,7 @@ export default function Home() {
         zIndex: 1,
       }} />
 
-      <div style={{ position: 'relative', zIndex: 2, textAlign: 'center', padding: '2rem', maxWidth: '800px' }}>
+      <div style={{ position: 'relative', zIndex: 2, textAlign: 'center', padding: '2rem', maxWidth: '900px' }}>
         <h1 style={{
           fontSize: 'clamp(2rem, 6vw, 3.5rem)',
           fontWeight: 900,
@@ -48,31 +56,32 @@ export default function Home() {
         <p style={{
           fontSize: 'clamp(1rem, 2vw, 1.3rem)',
           color: '#9ca3af',
-          marginBottom: '2.5rem',
+          margin: '1.5rem auto 3rem',
           maxWidth: '550px',
-          margin: '1.5rem auto 2.5rem',
           lineHeight: 1.6,
         }}>
-          Real-time coordination error detection for large-scale construction projects. Cross-references updates from all teams, detects conflicts early, and alerts the right people before small mistakes become big problems.
+          Real-time construction monitoring. Aggregates fragmented site data, detects coordination errors, and alerts the right people before small mistakes become big problems.
         </p>
 
-        <Link href="/users" style={{
-          display: 'inline-block',
-          padding: '1rem 2.5rem',
-          background: 'linear-gradient(135deg, #3b82f6, #2563eb)',
-          color: '#fff',
-          textDecoration: 'none',
-          fontWeight: 700,
-          fontSize: '1rem',
-          borderRadius: '8px',
-          boxShadow: '0 4px 20px rgba(59, 130, 246, 0.4)',
-          textTransform: 'uppercase',
-          letterSpacing: '0.05em',
-          border: '2px solid rgba(96, 165, 250, 0.3)',
-          transition: 'transform 0.2s, box-shadow 0.2s',
-        }}>
-          View User Roles
-        </Link>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', maxWidth: '400px', margin: '0 auto' }}>
+          {navLinks.map(link => (
+            <Link key={link.href} href={link.href} style={{
+              display: 'block',
+              padding: '0.75rem 1.5rem',
+              background: 'rgba(17, 24, 39, 0.8)',
+              border: '1px solid #1f2937',
+              borderRadius: '8px',
+              color: '#e0e0e0',
+              textDecoration: 'none',
+              fontSize: '0.9rem',
+              fontWeight: 600,
+              transition: 'border-color 0.2s, background 0.2s',
+              backdropFilter: 'blur(8px)',
+            }}>
+              {link.label}
+            </Link>
+          ))}
+        </div>
       </div>
 
       <div style={{
@@ -88,7 +97,7 @@ export default function Home() {
         </p>
       </div>
 
-      <style>{`a:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(59, 130, 246, 0.6); }`}</style>
+      <style>{`a:hover { border-color: #3b82f6; background: rgba(30, 58, 95, 0.8) !important; }`}</style>
     </div>
   );
 }
