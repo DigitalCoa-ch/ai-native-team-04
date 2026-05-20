@@ -33,7 +33,7 @@ export default function Users() {
           </p>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.25rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.25rem' }}>
           {users.map(u => (
             <Link key={u.href} href={u.href} style={{
               background: '#111827',
