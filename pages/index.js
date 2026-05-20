@@ -42,7 +42,7 @@ export default function Home() {
           lineHeight: 1.1,
         }}>
           AI Construction<br />
-          <span style={{ color: '#60a5fa' }}>Monitoring System</span>
+          <span style={{ color: '#60a5fa' }}>Site Sense</span>
         </h1>
 
         <p style={{
