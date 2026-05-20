@@ -17,8 +17,19 @@ export default function Home() {
       <div style={{
         position: 'absolute',
         inset: 0,
-        background: 'linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #0a0a0f 100%)',
+        backgroundImage: "url(https://sfo3.media.global.com/inbound/generated-image_14---1f9012be-dc50-4830-a468-0ba463955b79.png)",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        filter: 'brightness(0.5) saturate(1.1)',
         zIndex: 0,
+      }} />
+
+      <div style={{
+        position: 'absolute',
+        inset: 0,
+        background: 'linear-gradient(135deg, rgba(10,10,15,0.75) 0%, rgba(26,26,46,0.6) 50%, rgba(10,10,15,0.85) 100%)',
+        zIndex: 1,
       }} />
 
       <div style={{ position: 'relative', zIndex: 2, textAlign: 'center', padding: '2rem', maxWidth: '800px' }}>
