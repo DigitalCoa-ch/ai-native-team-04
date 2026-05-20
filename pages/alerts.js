@@ -122,7 +122,7 @@ export default function AlertCenter() {
               )}
             </div>
           </>
-        )
+        )}
         {tab === "create" && (
           <div style={{ maxWidth: "700px", margin: "0 auto" }}>
             <h2 style={{ color: "#fff", fontSize: "1.4rem", marginBottom: "0.25rem" }}>Create New Alert</h2>
@@ -131,8 +131,7 @@ export default function AlertCenter() {
               <div style={{ background: "#052e16", border: "1px solid #22c55e", borderRadius: "8px", padding: "1rem", marginBottom: "1.5rem", textAlign: "center", color: "#22c55e", fontWeight: 600 }}>
                 Alert created and added to the dashboard.
               </div>
-            )
-            }
+            )}
             <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}>
               <div>
                 <label style={labelStyle}>Alert Title</label>
