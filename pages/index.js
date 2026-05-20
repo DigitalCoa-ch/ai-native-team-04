@@ -33,16 +33,6 @@ export default function Home() {
       }} />
 
       <div style={{ position: 'relative', zIndex: 2, textAlign: 'center', padding: '2rem', maxWidth: '800px' }}>
-        <p style={{
-          fontSize: '0.8rem',
-          color: '#60a5fa',
-          textTransform: 'uppercase',
-          letterSpacing: '0.2em',
-          marginBottom: '1rem',
-        }}>
-          AI-Powered Construction Intelligence
-        </p>
-
         <h1 style={{
           fontSize: 'clamp(2rem, 6vw, 3.5rem)',
           fontWeight: 900,
@@ -52,8 +42,7 @@ export default function Home() {
           margin: '0 0 0.5rem 0',
           lineHeight: 1.1,
         }}>
-          AI Construction<br />
-          <span style={{ color: '#60a5fa' }}>Site Sense</span>
+          <span style={{ color: '#ffffff' }}>Site Sense</span>
         </h1>
 
         <p style={{
