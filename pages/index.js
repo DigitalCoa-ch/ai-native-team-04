@@ -17,7 +17,7 @@ export default function Home() {
       <div style={{
         position: 'absolute',
         inset: 0,
-        backgroundImage: "url(https://sfo3.media.global.com/inbound/generated-image_14---1f9012be-dc50-4830-a468-0ba463955b79.png)",
+        backgroundImage: "url(/site-bg.jpg)",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
