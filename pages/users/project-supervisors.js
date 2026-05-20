@@ -4,7 +4,7 @@ export default function ProjectSupervisors() {
   return (
     <div style={{ fontFamily: 'sans-serif', lineHeight: 1.6, background: '#0a0a0f', color: '#e0e0e0', minHeight: '100vh', padding: '2rem' }}>
       <header style={{ background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)', borderBottom: '1px solid #2a2a4a', padding: '1.5rem 2rem', margin: '-2rem -2rem 2rem -2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <a href="/" style={{ color: '#888', textDecoration: 'none', fontSize: '0.9rem' }}>← Back to Overview</a>
+        <a href="/users" style={{ color: '#888', textDecoration: 'none', fontSize: '0.9rem' }}>← Back to Overview</a>
       </header>
       <div style={{ maxWidth: '850px', margin: '0 auto' }}>
         <span style={{ display: 'inline-block', background: '#1e3a5f', color: '#60a5fa', fontSize: '0.75rem', padding: '0.2rem 0.6rem', borderRadius: '20px', marginBottom: '1rem' }}>Progress Tracking</span>
