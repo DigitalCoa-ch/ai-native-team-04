@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 const navLinks = [
+  { href: '/alerts', label: 'Alert Center', desc: 'Live alert dashboard — click to use' },
   { href: '/how-it-works', label: 'How It Works', desc: 'See how data flows from input to alert' },
   { href: '/ai-logic', label: 'AI Logic', desc: 'The six-step detection process' },
   { href: '/alert-system', label: 'Alert System', desc: 'Severity levels from low to critical' },
