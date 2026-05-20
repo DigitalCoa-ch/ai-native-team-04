@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Construction Monitoring System</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      background: #0a0a0f;
+      color: #e0e0e0;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      border-bottom: 1px solid #2a2a4a;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; margin-bottom: 0.5rem; color: #fff; }
+    header p { color: #888; font-size: 0.95rem; }
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+    h2 { font-size: 1.5rem; margin: 2rem 0 1rem; color: #fff; border-left: 4px solid #3b82f6; padding-left: 1rem; }
+    .user-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+    .user-card {
+      background: #111827;
+      border: 1px solid #1f2937;
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+    }
+    .user-card:hover {
+      transform: translateY(-4px);
+      border-color: #3b82f6;
+      box-shadow: 0 8px 30px rgba(59, 130, 246, 0.15);
+    }
+    .user-card h3 { color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem; }
+    .user-card p { color: #888; font-size: 0.85rem; }
+    .user-card .tag {
+      display: inline-block;
+      background: #1e3a5f;
+      color: #60a5fa;
+      font-size: 0.7rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 20px;
+      margin-top: 0.75rem;
+    }
+    .section { margin-top: 3rem; }
+    .section h2 { margin-top: 0; }
+    .section p { color: #999; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI Construction Monitoring System</h1>
+    <p>Real-time coordination error detection for large-scale construction projects</p>
+  </header>
+  <div class="container">
+    <div class="section">
+      <h2>System Overview</h2>
+      <p>Analyzes all construction data in real time and reconstructs the actual progress of the site. Detects errors, missing information, and coordination conflicts across different teams (plumbing, electrical, structure, safety) and sends alerts ranked by severity.</p>
+    </div>
+
+    <h2 style="margin-top: 3rem;">Intended Users</h2>
+    <div class="user-grid">
+      <a href="site-managers.html" class="user-card">
+        <h3>Site Managers</h3>
+        <p>Senior on-site leaders who need holistic project visibility and critical alert prioritization.</p>
+        <span class="tag">Executive Dashboard</span>
+      </a>
+      <a href="project-supervisors.html" class="user-card">
+        <h3>Project Supervisors</h3>
+        <p>Day-to-day coordinators managing multiple work areas and cross-team coordination.</p>
+        <span class="tag">Progress Tracking</span>
+      </a>
+      <a href="construction-foremen.html" class="user-card">
+        <h3>Construction Foremen</h3>
+        <p>Trade team leaders who need simplified updates and early blocker warnings.</p>
+        <span class="tag">Mobile Interface</span>
+      </a>
+      <a href="engineering-coordinators.html" class="user-card">
+        <h3>Engineering Coordinators</h3>
+        <p>Technical specialists ensuring design alignment and detecting clashes.</p>
+        <span class="tag">BIM & Design</span>
+      </a>
+    </div>
+
+    <div class="section" style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #1f2937;">
+      <h2>Core AI Logic</h2>
+      <p>Collects real-time data (photos, notes, reports, plans) → Organizes and structures all information → Cross-references updates from different teams → Compares real progress with project plans (BIM/models) → Detects coordination errors, missing steps, and safety risks → Ranks alerts by severity (low to critical) → Sends real-time notifications.</p>
+    </div>
+
+    <div class="section">
+      <h2>Human-in-the-Loop</h2>
+      <p>The AI detects and generates alerts. Site managers review and verify critical alerts. Humans make final decisions before actions are taken. This prevents false alarms and ensures safety and trust.</p>
+    </div>
+  </div>
+</body>
+</html>

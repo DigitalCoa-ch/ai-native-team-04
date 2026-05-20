@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Supervisors — AI Construction Monitoring</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; background: #0a0a0f; color: #e0e0e0; min-height: 100vh; }
+    a { color: #60a5fa; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-bottom: 1px solid #2a2a4a; padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    header .back { color: #888; font-size: 0.9rem; }
+    header .back:hover { color: #60a5fa; text-decoration: none; }
+    .container { max-width: 850px; margin: 0 auto; padding: 2rem; }
+    h1 { font-size: 1.8rem; color: #fff; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.3rem; color: #fff; margin: 2rem 0 0.75rem; border-left: 4px solid #3b82f6; padding-left: 0.75rem; }
+    h3 { color: #d1d5db; font-size: 1rem; margin-top: 1.25rem; }
+    .badge { display: inline-block; background: #1e3a5f; color: #60a5fa; font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: 20px; margin-bottom: 1rem; }
+    p { color: #9ca3af; margin-bottom: 1rem; }
+    ul { color: #9ca3af; margin: 0.75rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    .workflow { background: #111827; border: 1px solid #1f2937; border-radius: 12px; padding: 1.25rem; margin: 1rem 0; }
+    .workflow ol { color: #9ca3af; margin-left: 1.25rem; margin-top: 0.5rem; }
+    .workflow li { margin-bottom: 0.3rem; }
+    .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem; }
+    .metric { background: #111827; border: 1px solid #1f2937; border-radius: 8px; padding: 1rem; }
+    .metric strong { display: block; color: #60a5fa; font-size: 1.2rem; margin-bottom: 0.25rem; }
+    .metric span { color: #6b7280; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back">← Back to Overview</a>
+  </header>
+  <div class="container">
+    <span class="badge">Progress Tracking</span>
+    <h1>Project Supervisors</h1>
+
+    <h2>Who They Are</h2>
+    <p>Project supervisors act as the bridge between site management and field operations. They monitor day-to-day progress across multiple work fronts, ensure work aligns with plans and schedules, and coordinate between different trades and teams.</p>
+
+    <h2>Responsibilities</h2>
+    <ul>
+      <li>Monitoring progress across multiple work areas simultaneously</li>
+      <li>Ensuring work follows the project schedule</li>
+      <li>Coordinating between different trades and teams</li>
+      <li>Quality assurance and defect tracking</li>
+      <li>Progress reporting to site management</li>
+      <li>Managing sub-contractor performance</li>
+    </ul>
+
+    <h2>Pain Points</h2>
+    <ul>
+      <li>Juggling updates from multiple teams across different tools and channels</li>
+      <li>Manually cross-referencing photos, notes, and reports to verify progress</li>
+      <li>Difficulty identifying which small issues will snowball into big problems</li>
+      <li>Tracking which tasks are truly complete vs. partially done</li>
+      <li>Communicating schedule impacts to site managers accurately</li>
+      <li>Managing change orders and detecting when work deviates from plans</li>
+    </ul>
+
+    <h2>How the System Helps</h2>
+
+    <h3>Unified Progress View</h3>
+    <p>All team updates—photos, notes, reports—flow into a single structured view. Supervisors see what was done, by whom, and when, without chasing down individual team leads.</p>
+
+    <h3>Cross-Team Coordination Detection</h3>
+    <p>The AI identifies when progress from one team creates conflicts or dependencies for another. When structural team completes work that blocks the planned electrical route, the system flags it before electrical team wastes time on impossible work.</p>
+
+    <h3>Progress vs. Plan Comparison</h3>
+    <p>Rather than manually comparing updates against schedules, the system continuously evaluates actual progress against the project plan and highlights variances.</p>
+
+    <h3>Automated Progress Tracking</h3>
+    <p>Work completion is inferred from uploaded data (photos showing completed work, completion notes, report confirmations), reducing the need for manual status collection.</p>
+
+    <h2>Key Workflows</h2>
+
+    <div class="workflow">
+      <strong>Multi-Team Monitoring</strong>
+      <ol>
+        <li>Open unified dashboard view</li>
+        <li>Scan progress status across all assigned work areas</li>
+        <li>Drill into any area showing unexpected status</li>
+        <li>Flag issues or escalate to site manager</li>
+      </ol>
+    </div>
+
+    <div class="workflow">
+      <strong>Coordination Conflict Resolution</strong>
+      <ol>
+        <li>Receive cross-team conflict alert</li>
+        <li>Review what each team has reported</li>
+        <li>Determine which team has accurate/priority status</li>
+        <li>Coordinate correction with affected team leads</li>
+        <li>Confirm resolution in system</li>
+      </ol>
+    </div>
+
+    <div class="workflow">
+      <strong>Daily Wrap-Up</strong>
+      <ol>
+        <li>Review all team updates from the day</li>
+        <li>Identify any incomplete tasks that need follow-up</li>
+        <li>Prepare summary for site manager</li>
+        <li>Log any change order requests</li>
+      </ol>
+    </div>
+
+    <h2>Success Metrics</h2>
+    <div class="metrics">
+      <div class="metric"><strong>Reduced</strong><span>Time chasing status updates from teams</span></div>
+      <div class="metric"><strong>Earlier</strong><span>Identification of schedule impacts</span></div>
+      <div class="metric"><strong>Fewer</strong><span>Coordination conflicts between trades</span></div>
+      <div class="metric"><strong>More Accurate</strong><span>Daily and weekly progress reports</span></div>
+    </div>
+  </div>
+</body>
+</html>

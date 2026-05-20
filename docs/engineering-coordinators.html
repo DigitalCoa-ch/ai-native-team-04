@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering Coordinators — AI Construction Monitoring</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; background: #0a0a0f; color: #e0e0e0; min-height: 100vh; }
+    a { color: #60a5fa; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-bottom: 1px solid #2a2a4a; padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    header .back { color: #888; font-size: 0.9rem; }
+    header .back:hover { color: #60a5fa; text-decoration: none; }
+    .container { max-width: 850px; margin: 0 auto; padding: 2rem; }
+    h1 { font-size: 1.8rem; color: #fff; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.3rem; color: #fff; margin: 2rem 0 0.75rem; border-left: 4px solid #3b82f6; padding-left: 0.75rem; }
+    h3 { color: #d1d5db; font-size: 1rem; margin-top: 1.25rem; }
+    .badge { display: inline-block; background: #1e3a5f; color: #60a5fa; font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: 20px; margin-bottom: 1rem; }
+    p { color: #9ca3af; margin-bottom: 1rem; }
+    ul { color: #9ca3af; margin: 0.75rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    .workflow { background: #111827; border: 1px solid #1f2937; border-radius: 12px; padding: 1.25rem; margin: 1rem 0; }
+    .workflow ol { color: #9ca3af; margin-left: 1.25rem; margin-top: 0.5rem; }
+    .workflow li { margin-bottom: 0.3rem; }
+    .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem; }
+    .metric { background: #111827; border: 1px solid #1f2937; border-radius: 8px; padding: 1rem; }
+    .metric strong { display: block; color: #60a5fa; font-size: 1.2rem; margin-bottom: 0.25rem; }
+    .metric span { color: #6b7280; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back">← Back to Overview</a>
+  </header>
+  <div class="container">
+    <span class="badge">BIM & Design</span>
+    <h1>Engineering Coordinators</h1>
+
+    <h2>Who They Are</h2>
+    <p>Engineering coordinators are specialists who ensure technical alignment between design documents (plans, BIM models, specifications) and actual construction. They manage the flow of engineering information and catch technical conflicts before they become expensive problems.</p>
+
+    <h2>Responsibilities</h2>
+    <ul>
+      <li>Maintaining technical documentation and design files</li>
+      <li>Coordinating between design engineers and site teams</li>
+      <li>Reviewing and approving technical submittals</li>
+      <li>Managing BIM/model coordination</li>
+      <li>Tracking design changes and their impacts</li>
+      <li>Resolving technical conflicts between trades</li>
+    </ul>
+
+    <h2>Pain Points</h2>
+    <ul>
+      <li>BIM models and plans that are outdated or superseded by field changes</li>
+      <li>Manually cross-referencing dozens of plan revisions against site progress</li>
+      <li>Design conflicts not discovered until construction is already wrong</li>
+      <li>Change orders not properly propagated to all affected teams</li>
+      <li>Difficulty tracking which version of drawings is actually being used in the field</li>
+      <li>Information requests from site teams that take time to answer due to unclear context</li>
+    </ul>
+
+    <h2>How the System Helps</h2>
+
+    <h3>As-Built vs. Designed Comparison</h3>
+    <p>The system continuously compares what's been reported as built against the current design documents. When field progress diverges from plans, it flags the variance for engineering review.</p>
+
+    <h3>BIM Integration and Drift Detection</h3>
+    <p>Upload and track BIM/model versions. When site reports indicate work that conflicts with the current model, the system highlights the discrepancy—catching clashes before they become rework.</p>
+
+    <h3>Change Order Impact Tracking</h3>
+    <p>When a design change is issued, the system identifies which in-progress and planned tasks are affected, helping coordinate the response across teams.</p>
+
+    <h3>Cross-Trade Technical Coordination</h3>
+    <p>Many coordination conflicts are technical—electrical conduit routing conflicting with structural members, or HVAC placement conflicting with architectural features. The system surfaces these based on uploaded data and plan comparisons.</p>
+
+    <h3>Automatic Specification Checking</h3>
+    <p>When teams submit progress, the system can cross-reference against specifications to flag potential quality deviations.</p>
+
+    <h2>Key Workflows</h2>
+
+    <div class="workflow">
+      <strong>Design Review and Upload</strong>
+      <ol>
+        <li>Upload latest approved design documents and BIM files</li>
+        <li>Tag documents with affected areas, systems, and trade scopes</li>
+        <li>System associates new documents with relevant project sections</li>
+        <li>Previous versions are archived but accessible for comparison</li>
+      </ol>
+    </div>
+
+    <div class="workflow">
+      <strong>Change Order Processing</strong>
+      <ol>
+        <li>Receive design change notification</li>
+        <li>Review what the change affects</li>
+        <li>Identify impacted tasks already in progress</li>
+        <li>Issue clarification to affected teams</li>
+        <li>Track acknowledgment and action</li>
+      </ol>
+    </div>
+
+    <div class="workflow">
+      <strong>Clash Detection Review</strong>
+      <ol>
+        <li>Receive alert about potential design clash</li>
+        <li>Pull up both conflicting elements in design documents</li>
+        <li>Coordinate with relevant design engineers</li>
+        <li>Issue resolution or escalation</li>
+        <li>Update records with resolution</li>
+      </ol>
+    </div>
+
+    <div class="workflow">
+      <strong>Site Technical Query Response</strong>
+      <ol>
+        <li>Receive technical question from site team</li>
+        <li>Review relevant design context from system</li>
+        <li>Provide clarified guidance</li>
+        <li>Document Q&A for future reference</li>
+      </ol>
+    </div>
+
+    <h2>Success Metrics</h2>
+    <div class="metrics">
+      <div class="metric"><strong>Reduced</strong><span>Design-related rework</span></div>
+      <div class="metric"><strong>Faster</strong><span>Resolution of technical queries</span></div>
+      <div class="metric"><strong>Earlier</strong><span>Detection of clash conflicts</span></div>
+      <div class="metric"><strong>Improved</strong><span>Version control of design documents</span></div>
+    </div>
+  </div>
+</body>
+</html>
